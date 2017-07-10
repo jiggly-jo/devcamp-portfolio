@@ -90,5 +90,5 @@ ActiveRecord::Schema.define(version: 20170626144601) do
   end
 
   add_foreign_key "blogs", "topics"
-  add_foreign_key "technologies", "portfolios"
+  add_foreign_key "portfolios","technologies"
 end
