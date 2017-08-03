@@ -5,6 +5,22 @@
     <div class= "row">
       <div class = "col-md-4">
         <%= image_tag "happy-smile.jpg", width: 300, alt: "profile image", class: 'profile-img'%>
+        <div class = "skills">
+          <% @skills.each do |skill| %>
+          <div class = "skill">
+            <h4><%= skill.title %></h4>
+            <div class = "progress">
+              <div 
+              class = "progress-bar progress-bar-striped bg-warning"
+              role = "progressbar"
+              aria-valuenow = "<%= skill.percent_utilized %>"
+              aria-valuemax = "100"
+              style = "width: <%= skill.percent_utilized %>%"
+              ></div>
+            </div>
+          </div>
+          <%end%>
+        </div>
       </div>
       <div class = "col-md-8">
         <p> Currently, I am a 17 year old highschool student with a big dream for making games as a career. I am trying to learn a couple of programming languages like C#, Ruby, HTML, Java, C++, and Python. Some of these languages like C#, C++, and Java is used to make games which is what I want to do. But other languages like Ruby, HTML, and Python is for web development which is a some side knowledge I would like to know. Ruby is what I used to program this website you see before you.  </p>
