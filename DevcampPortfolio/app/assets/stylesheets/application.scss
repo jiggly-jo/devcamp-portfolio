@@ -3,8 +3,13 @@
 /*
  * Globals
  */
+@font-face{
+  font-family:'Press Start 2P', cursive;
+  src: font-url('PressStart2P-Regular.tff')
+}
 
 /* Links */
+
 a,
 a:focus,
 a:hover {
@@ -26,9 +31,11 @@ a:hover {
  * Base structure
  */
 
+
 html,
 body {
   height: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 body {
   color: #fff;
@@ -36,6 +43,14 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Press Start 2P', cursive;
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
